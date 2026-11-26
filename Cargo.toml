@@ -1,0 +1,4 @@
+[workspace]
+members = ["booking-core", "server", "desktop/ui", "desktop/src-tauri"]
+default-members = ["booking-core", "server"]
+resolver = "3"

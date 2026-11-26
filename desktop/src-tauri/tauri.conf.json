@@ -1,0 +1,30 @@
+{
+  "productName": "Booking Simulator",
+  "version": "0.1.0",
+  "identifier": "com.alsheikhmedia.booking-simulator",
+  "build": {
+    "beforeDevCommand": {
+      "script": "trunk serve --port 1420",
+      "cwd": "../ui"
+    },
+    "beforeBuildCommand": {
+      "script": "trunk build --release",
+      "cwd": "../ui"
+    },
+    "devUrl": "http://localhost:1420",
+    "frontendDist": "../ui/dist"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "title": "Booking Simulator",
+        "width": 800,
+        "height": 760
+      }
+    ]
+  },
+  "bundle": {
+    "active": false
+  }
+}
